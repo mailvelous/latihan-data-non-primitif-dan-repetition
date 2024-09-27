@@ -65,18 +65,20 @@ func case3D() {
 func case3E() {
 	var number int
 	var space string
+	var n int
 
 	number = 10
 	space = " "
+	n=5
 
-	for i := 1; i <= 5; i++ {
-		for i := 1; i <= 5; i++ {
+	for i := 1; i <= n; i++ {
+		for i := 1; i <= n; i++ {
 			number = number + 1
 			fmt.Printf("%s", space)
 			fmt.Printf("%d", number)
 		}
 		fmt.Println()
-		number = number + 5
+		number = number + 10 - n
 	}
 
 
